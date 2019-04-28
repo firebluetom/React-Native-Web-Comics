@@ -41,6 +41,10 @@ export default class App extends Component<Props> {
           itemWidth={Dimensions.get('window').width - 75}
           layout="default"
           onSnapToItem={setIndex}
+
+          removeClippedSubviews={true}
+          initialNumToRender={5}
+          maxToRenderPerBatch={5}
         />
       </View>
     );

@@ -5,7 +5,7 @@
   "scripts": {
     "copy-apk": "npx copyfiles -f ./android/app/build/outputs/apk/release/*.apk apk",
     "test": "jest",
-    "release": "cd android && gradlew assembleRelease && cd ../ && copy-apk",
+    "release": "cd android && gradlew assembleRelease && cd ../ && npm run copy-apk",
     "release-variant": "react-native run-android --variant=release",
     "start": "react-native run-android"
   },

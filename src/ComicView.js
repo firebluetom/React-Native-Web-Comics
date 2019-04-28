@@ -44,7 +44,7 @@ export class ComicView extends PureComponent {
                 </head>
                 <body>
                     <img src="${src}" class="comic ${comicToShow && 'not-visible'}" />
-                    <img src="${afterComic}" class="comic ${!comicToShow && 'visible'}"/>
+                    <img src="${afterComic}" class="comic ${!comicToShow && 'not-visible'}"/>
                     <h6>${title}</h6>
                 </body>
             </html>
