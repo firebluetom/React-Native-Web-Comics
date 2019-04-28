@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "copy-apk": "npx copyfiles -f ./android/app/build/outputs/apk/release/*.apk apk",
     "test": "jest",
-    "release": "cd android && gradlew assembleRelease && cd ../",
+    "release": "cd android && gradlew assembleRelease && cd ../ && copy-apk",
     "release-variant": "react-native run-android --variant=release",
     "start": "react-native run-android"
   },
