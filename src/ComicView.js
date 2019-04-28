@@ -38,8 +38,8 @@ export class ComicView extends PureComponent {
                             background-size: cover;
                         }
                         .comic { width: 100%; }
-                        .visible { flex: 1; display: block; }
-                        .not-visible { flex: 0; display: none; }
+                        .visible { display: block; }
+                        .not-visible { display: none; }
                     </style>
                 </head>
                 <body>
