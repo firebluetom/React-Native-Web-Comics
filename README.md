@@ -1,6 +1,15 @@
 # React-Native-Web-Comics
 
-Coming Soon
+## Getting Started
+
+```
+0. Install react-native and dependencies
+1. npm ci
+2. npm start (local development)
+```
+
+### Build for Android
+`npm run release` This will generate the appropriate apks and place them in the apk folder
 
 ## Download
 [APK v7a](https://github.com/firebluetom/React-Native-Web-Comics/raw/master/apk/app-armeabi-v7a-release.apk)

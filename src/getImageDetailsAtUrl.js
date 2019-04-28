@@ -1,7 +1,7 @@
 const HTMLParser = require('fast-html-parser');
 
 export const getImageDetailsAtUrl = (url) => {
-    return fetch(url, { cache: "force-cache" })
+    return fetch(url)
         .then((response) => response.text())
         .then((response) => {
             var root = HTMLParser.parse(response);
